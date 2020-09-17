@@ -42,3 +42,13 @@ console.log(person4);
     6. This is refering to the parameter we pass through our constructor function.
     7 & 8: This 'new' keyword is calling our Person function, creating a new person with the values we passing as arguments, and storing that person in a variable.
 */
+
+
+
+
+
+
+
+
+
+
