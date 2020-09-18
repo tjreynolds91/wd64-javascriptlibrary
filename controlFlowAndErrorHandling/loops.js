@@ -191,3 +191,8 @@ for(pos of indexArr) {
     for in loops: loops through properties of an object.
     for of loops: loops over iterable objects as an arrays and strings *strings can be accessed much in the same way as arrays.
 */
+
+
+
+
+
