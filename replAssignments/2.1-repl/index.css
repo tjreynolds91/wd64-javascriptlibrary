@@ -6,7 +6,9 @@
     border-top-left-radius: 10mm;
     border-bottom-left-radius: 5mm ;
     border-color: black;
-    margin-left:400px;
+    /* margin-left:900px; */
+    margin-bottom: 43mm;
+   
     
     
 
@@ -20,8 +22,17 @@
     border-top-left-radius: 5mm;
     border-bottom-left-radius: 10mm;
     border-color: black;
-    margin-left:400px;
+    margin-left:-158px;
+    
     
     
 
+}
+
+/* image {
+    justify-content: center;
+} */
+body{
+    text-align: center;
+    flex-wrap: wrap;
 }

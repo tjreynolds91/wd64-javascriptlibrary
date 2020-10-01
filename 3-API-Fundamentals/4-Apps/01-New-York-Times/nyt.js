@@ -7,7 +7,7 @@ const searchTerm = document.querySelector('.search');
 const startDate = document.querySelector('.start-date');
 const endDate = document.querySelector('.end-date');
 const searchForm = document.querySelector('form');
-const submitBtn = document.querySelector('.submit');
+const submitBtn = document.querySelector('.submit');  // !!!!!!!!
 
 
 //RESULTS NAVIGATION
@@ -24,7 +24,7 @@ let pageNumber = 0;
 console.log('pageNumber:', pageNumber);
 let displayNav = false;
         //1                     //2
-searchForm.addEventListener('submit', fetchResults);
+searchForm.addEventListener('submit', fetchResults);   // !!!!!!
 nextBtn.addEventListener('click', nextPage); //3
 previousBtn.addEventListener('click', previousPage); //3
 
@@ -42,7 +42,8 @@ function fetchResults(e) {
     if(endDate.value !== '') {
         url +='&end_date=' + endDate.value;
     };
-    fetch(url).then(function(result){
+    fetch(url)
+    .then(function(result){
         // console.log(result)
         return result.json(); //2
     }).then(function(json) {

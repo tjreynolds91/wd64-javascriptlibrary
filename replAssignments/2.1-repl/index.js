@@ -29,3 +29,58 @@ fetch('https://rickandmortyapi.com/api/character/')
         document.body.appendChild(m);
       }
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var computerGuess = Math.round(Math.random() * 10 + 1);
+var guessCount = 3;
+console.log(computerGuess);
+
+while (true) {
+  var userGuess = parseInt(prompt("Please pick a number between 1 and 10"));
+  if (userGuess < 1 || userGuess > 10) {
+    alert("Please guess between 1 and 10");
+    
+  } else {
+    
+    if (guessCount > 1) {
+  
+      if (userGuess === computerGuess) {
+        alert("Winner winner taco dinner!");
+        break;
+      } else if (userGuess > computerGuess) {
+        guessCount--;
+        alert("Please guess lower. You have " + guessCount + " guesses remaining.");
+        
+      
+      } else {
+        guessCount--;
+        alert("Please guess higher. You have " + guessCount + " guesses remaining.");
+    }
+  
+    } else {
+      alert("MUh hahahahah you lose!");
+      break;
+    }
+  } 
+}
