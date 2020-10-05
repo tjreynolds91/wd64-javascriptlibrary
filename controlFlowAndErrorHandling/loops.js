@@ -171,7 +171,7 @@ console.log(fullName);
 * *************
 ! FOROF LOOP
 * *************
-    - In orer to run a FOR OF loop, the "thing" must be numbered like an array.
+    - In order to run a FOR OF loop, the "thing" must be numbered like an array.
     let object = {
         key: value,
         key: value,

@@ -5,7 +5,7 @@
 What is scope?
 
     -scope is how a computer keeps track of all the variables in a program.
-    -scoper can also be nested, where there's an outer scope (global) that encloses an inner scope.
+    -scopes can also be nested, where there's an outer scope (global) that encloses an inner scope.
 
 */
 
@@ -74,7 +74,7 @@ console.log(ordered);
 // - let is scoped to the nearest enclosing block.
 let a = 10;
 function reassign() {
-    a = 30  // we are keeping this variable open and, with the 'let' keyword, we are capable of changing the value that is currently being help within that variable.
+    a = 30  // we are keeping this variable open and, with the 'let' keyword, we are capable of changing the value that is currently being held within that variable.
     console.log(`a is being set to ${a} in this function.`);
 }
 console.log(`Before reassinging function: ${a}`);

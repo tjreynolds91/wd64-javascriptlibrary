@@ -33,7 +33,7 @@ function testHoist() {
 }
 testHoist();
 console.log(becomesGlobal);
-// It is best practice to ALWAYS declare variables regardless of wheather they are in a function or global scope.  This maes it clear how it should be handled.
+// It is best practice to ALWAYS declare variables regardless of wheather they are in a function or global scope.  This makes it clear how it should be handled.
 //? Using LET
 // The keyword 'let' is block scoped and not function scoped.
 console.log(letVariable);
