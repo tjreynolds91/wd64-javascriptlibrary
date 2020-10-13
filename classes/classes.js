@@ -63,7 +63,7 @@ console.log(Auto.name)
 ***********
 !  METHODS
 ***********
-    - Introduced in ES%
+    - Introduced in ES5
         - prototype methods are shorter for method definitions.
 */
 
