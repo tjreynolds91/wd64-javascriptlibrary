@@ -5,6 +5,8 @@ const ApplicationControllers = require("./controllers/index");
 
 const expressApplicationObject = new Express();
 
+expressApplicationObject.use(Express.json());
+
 expressApplicationObject.use("/test", ApplicationControllers.test);
 expressApplicationObject.use("/users", ApplicationControllers.users);
 
@@ -17,18 +19,8 @@ expressApplicationObject.get('/',(request, response) =>{
 
 });
 
-// Challenge: Recieve a POST request at the route "/challenge"
-// Takes 2 values inside of the body:
-// Name -> A string for a name
-// Age -> A number for the age
-// Respond with this message:
-// If the user is 18 and older, the message will be:
-//    "<name>, you are an adult!"
-// Otherwise the message will be:
-//    "<name>, you will be an adult soon!"
 
-// JSON in a request is a STRING
-expressApplicationObject.use(Express.json());
+
 
 expressApplicationObject.post("/challenge", (request, response) => {
     let data = request.body;
